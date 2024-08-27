@@ -1,0 +1,312 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #095dc7;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header .top_header {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+}
+
+header .top_header .container .main_column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header .top_header i {
+    color: white;
+    font-size: 18px;
+}
+
+header .top_header .container .main_column .left_column i {
+    color: white;
+    font-size: 20px;
+    padding-right: 18px;
+}
+
+header .top_header .container .main_column .left_column i:last-child {
+    padding-right: 0;
+}
+
+header .top_header .container .main_column .right_column {
+    text-align: right;
+}
+
+header .top_header .container .main_column .right_column ul {
+    list-style-type: none;
+}
+
+header .top_header .container .main_column .right_column ul li {
+    display: inline-block;
+    padding-left: 53px;
+}
+
+header .top_header .container .main_column .right_column ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+/* Main Menu */
+.main_manu {
+    padding: 35px 0;
+}
+
+.main_manu .container .main_column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_manu .container .main_column ul li {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.main_manu .container .nav_column ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.main_manu .container .nav_column ul li a:hover {
+    color: #f30909;
+}
+
+.main_manu .container .nav_column ul li a:hover::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: blue;
+    margin-bottom: -10px;
+    left: 0;
+    bottom: -10px;
+}
+
+.active_manu a::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: blue;
+    margin-bottom: -10px;
+    left: 0;
+    bottom: 0;
+}
+
+.main_manu .container .nav_column {
+    display: flex;
+    align-items: center;
+}
+
+/* Banner Section */
+.banner_section {
+    height: 600px;
+    background-image: url('images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.banner_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner_section .container .banner_content h1 {
+    padding-bottom: 30px;
+    color: white;
+    font-size: 40px;
+}
+
+.banner_section .container .banner_content p {
+    line-height: 22px;
+    color: white;
+}
+
+.banner_content .btn_eliment a {
+    background-color: #85af4b;
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid #85af4b;
+    text-transform: uppercase;
+    transition: .4s ease;
+}
+
+.banner_content .btn_eliment a:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
+.banner_content .btn_eliment a:last-child {
+    background-color: transparent;
+    border-color: white;
+    margin-left: 28px;
+}
+
+.banner_content .btn_eliment a:last-child:hover {
+    background-color: #85af4b;
+    border-color: #85af4b;
+}
+
+.banner_content .btn_eliment {
+    margin-top: 45px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header .top_header .container .main_column {
+        grid-template-columns: 1fr;
+    }
+
+    header .top_header .container .main_column .left_column {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header .top_header .container .main_column .right_column {
+        text-align: center;
+    }
+
+    header .top_header .container .main_column .right_column ul {
+        padding: 0;
+    }
+
+    header .top_header .container .main_column .right_column ul li {
+        display: block;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main_manu .container .main_column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_manu .container .main_column ul li {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner_section {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .banner_content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .banner_section .container .banner_content h1 {
+        font-size: 30px;
+    }
+
+    .banner_section .container .banner_content p {
+        font-size: 16px;
+    }
+
+    .banner_content .btn_eliment a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .banner_content .btn_eliment a:last-child {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .top_header .container .main_column {
+        grid-template-columns: 1fr;
+    }
+
+    header .top_header .container .main_column .left_column {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header .top_header .container .main_column .right_column {
+        text-align: center;
+    }
+
+    .main_manu .container .nav_column ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_manu .container .main_column ul li {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner_section {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .banner_section .container .banner_content h1 {
+        font-size: 24px;
+    }
+
+    .banner_section .container .banner_content p {
+        font-size: 14px;
+    }
+
+    .banner_content .btn_eliment a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .top_header .container .main_column .left_column i {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header .top_header .container .main_column .right_column ul li {
+        display: block;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main_manu .container .nav_column ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_section {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .banner_section .container .banner_content h1 {
+        font-size: 20px;
+    }
+
+    .banner_section .container .banner_content p {
+        font-size: 12px;
+    }
+
+    .banner_content .btn_eliment a {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+}
