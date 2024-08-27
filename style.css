@@ -10,6 +10,7 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 header .top_header {
@@ -79,6 +80,9 @@ header .top_header .container .main_column .right_column ul li a {
     color: black;
     position: relative;
 }
+.main_manu .container .nav_column .mobile_device{
+    display: none;
+}
 
 .main_manu .container .nav_column ul li a:hover {
     color: #f30909;
@@ -117,7 +121,7 @@ header .top_header .container .main_column .right_column ul li a {
     height: 600px;
     background-image: url('images/banner-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     align-content: center;
 
 }
@@ -128,13 +132,13 @@ header .top_header .container .main_column .right_column ul li a {
 }
 
 .banner_section .container .banner_content h1 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: white;
     font-size: 40px;
 }
 
 .banner_section .container .banner_content p {
-    line-height: 22px;
+    /* line-height: 22px; */
     color: white;
 
 }

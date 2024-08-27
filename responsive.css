@@ -1,154 +1,107 @@
 /* Mobile devices (portrait and landscape) */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
     }
     
-    .main_manu .container .main_column {
-        flex-direction: column;
+    header .top_header .container .main_column {
+        grid-template-columns: 1fr;
         text-align: center;
+      
+    
+    }
+    header .top_header .container .main_column .right_column {
+        text-align: center;
+        padding-top: 10px;
+    
+    }
+    header .top_header .container .main_column .right_column ul li{
+        padding-left: 20px;
+        
+    }
+    header .top_header .container .main_column .right_column ul li:first-child{
+        padding-left: 0;
+        
+    }
+    .main_manu .container .nav_column ul {
+        display: none;
+    }
+    .main_manu .container .nav_column .mobile_device{
+        display: block;
+
+    }
+    .main_manu .container .nav_column .mobile_device a{
+        color: black;
+    }
+    .main_manu .container .nav_column .mobile_device i{
+        padding-left: 10px;
     }
 
-    .main_manu .container .main_column ul li {
-        padding-left: 15px;
+    /* main manu  */
+    .main_manu {
+        padding: 20px 0;
     }
 
+    /* banner section  */
     .banner_section {
         height: auto;
-        background-size: contain;
+        padding: 40px 0;
+       background-size: 100%;
+       align-content: normal;
+    
     }
-
-    .banner_section .container .banner_content {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .banner_section .container .banner_content h1 {
+        padding-bottom: 20px;
+        color: white;
+        font-size: 24px;
     }
-
-    .information_section .main_section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .information_section .main_section .left_site {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .best_fucutrs_section {
-        flex-direction: column;
-    }
-
-    .best_fucutrs_section .left_fucutrs {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .count_div .counting {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about_main_section .about_content {
-        grid-template-columns: 1fr;
-    }
-
-    .curcle_section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .curcle_section .curcle_div {
-        justify-content: center;
-    }
-
-    .device_section .device {
-        background-size: contain;
-        height: auto;
-    }
-
-    .main_projects_section .photo_lab {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .team_section .team_div .meting_div {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer .main_footer_section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .main_blog_section .container .main_blog_content {
-        grid-template-columns: 1fr;
+    .banner_content .btn_eliment a {
+        padding: 12px 15px;
     }
 }
 
-/* Tablets (landscape and portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        padding: 0 30px;
+@media only screen and (max-width: 650px) {
+       /* banner section  */
+       .banner_section {
+        height: auto;
+        padding: 40px 0;
+       background-size: 100%;
+    
     }
-
-    .main_manu .container .main_column {
-        flex-direction: row;
-        justify-content: space-between;
+    
+.banner_content .btn_eliment {
+    margin-top: 30px;
+}
+    .banner_content .btn_eliment a {
+        padding: 12px 10px;
+    
     }
-
-    .main_manu .container .main_column ul li {
-        padding-left: 25px;
+    .banner_section .container .banner_content h1 {
+        padding-bottom: 15px;
+        color: white;
+        font-size: 20px;
     }
-
-    .banner_section {
-        height: 400px;
-        background-size: cover;
-    }
-
-    .banner_section .container .banner_content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .information_section .main_section {
-        flex-direction: row;
-    }
-
-    .best_fucutrs_section {
-        flex-direction: row;
-    }
-
-    .best_fucutrs_section .left_fucutrs {
+}
+@media only screen and (max-width: 490px) {
+       /* banner section  */
+       .banner_section {
         width: 100%;
-        margin-bottom: 0;
+        height: 800px;
+        padding: 10px 0;
+       background-size: 100%;
+    
     }
-
-    .count_div .counting {
-        grid-template-columns: 1fr 1fr 1fr;
+    
+.banner_content .btn_eliment {
+    margin-top: 30px;
+}
+    .banner_content .btn_eliment a {
+        padding: 5px 10 px;
+    
     }
-
-    .about_main_section .about_content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .curcle_section {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .device_section .device {
-        background-size: cover;
-        height: 400px;
-    }
-
-    .main_projects_section .photo_lab {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .team_section .team_div .meting_div {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .footer .main_footer_section {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .main_blog_section .container .main_blog_content {
-        grid-template-columns: 1fr 1fr;
+    .banner_section .container .banner_content h1 {
+        padding-bottom: 15px;
+        color: white;
+        font-size: 19px;
     }
 }
