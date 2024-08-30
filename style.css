@@ -118,7 +118,7 @@ header .top_header .container .main_column .right_column ul li a {
 /* MAIN MANU end */
 /* banner section  start*/
 .banner_section {
-    height: 600px;
+    height: 450px;
     background-image: url('images/banner-bg.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -150,7 +150,6 @@ header .top_header .container .main_column .right_column ul li a {
     padding: 12px 30px;
     border-radius: 50px;
     border: 1px solid #85af4b;
-    text-transform: uppercase;
     transition: .4s ease;
 }
 
@@ -177,17 +176,17 @@ header .top_header .container .main_column .right_column ul li a {
 /* banner section end  */
 /* grow section style start  */
 .information_section {
-    margin-top: 105px;
+    margin-top: 80px;
 }
 
 .information_section .main_section {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .information_section .main_section .left_site h1 {
     width: 300px;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
 }
 
