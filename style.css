@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 :root {
@@ -110,9 +111,33 @@ header .top_header .container .main_column .right_column ul li a {
     bottom: 0;
 }
 
-.main_manu .container .nav_column {
+.main_manu .container .main_column .nav_column {
     display: flex;
     align-items: center;
+}
+/* mobile manue  */
+.main_manu .container .main_column .nav_column .mobile_menu_bg{
+    position: absolute;
+    width: 200px;
+    height: 190px;
+    background-color: #010d1c;    
+    right: 0;
+    top: 125px;
+    display: none;
+    /* z-index: 1; */
+    text-align: center;
+}
+
+.main_manu .container .main_column .nav_column .mobile_menu_bg i{
+    padding-bottom: 15px;
+}
+.mobile_menu_bg li{
+    padding-bottom: 10px;
+}
+.mobile_menu_bg a{
+    color: white;
+    text-decoration: none;
+   
 }
 
 /* MAIN MANU end */

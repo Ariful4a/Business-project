@@ -57,9 +57,21 @@
                             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         </ul>
                         <div class="mobile_device">
-                            <a href="#"><i class="fa-solid fa-list"></i></a>
+                            <a href="#"><i class="fa-solid fa-list" onclick="showmanu()"></i></a>
                             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                           
+                           
+                        </div>
 
+                        <div class="mobile_menu_bg" id="manu-bg">
+                            <a href="#"><i class="fa-solid fa-xmark" onclick="hidemanu()"></i></a>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="about.html">ABOUT</a></li>
+                                    <li><a href="projests.html">Projects</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -452,7 +464,7 @@
                         <h2>Subscribe</h2>
                         <p>Subscribe to our weekly newsletter to receive the lastest freebies in your inbox Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, placeat!</p>
                         <input type="email" name="email" id="email" placeholder="Your Email Address">
-                        <div>
+                        <div class="btn">
                             <a href="#">Subscribe</a>
                         </div>
                     </div>
@@ -483,7 +495,16 @@
     </footer>
 
 
-
+<script>
+    function showmanu() {
+       const showmanubg = document.getElementById('manu-bg')
+       showmanubg.style.display = 'block';
+    }
+    function hidemanu() {
+       const showmanubg = document.getElementById('manu-bg')
+       showmanubg.style.display = 'none';
+    }
+</script>
 
     <script src="jqury.js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
