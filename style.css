@@ -408,13 +408,13 @@ header .top_header .container .main_column .right_column ul li a {
     font-size: 40px;
 }
 
-.projects_section .photo_lab {
+.main_projects_section .container .projects_section .photo_lab {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
 
-.projects_section .photo_lab img {
+.main_projects_section .container .projects_section .photo_lab img {
     width: 100%;
 }
 
@@ -639,6 +639,10 @@ footer .latast_news img {
     text-align: right;
 }
 
+/* mobile device footer  */
+.mobile_foter{
+    display: none;
+}
 /*home fotter section end */
 
 
